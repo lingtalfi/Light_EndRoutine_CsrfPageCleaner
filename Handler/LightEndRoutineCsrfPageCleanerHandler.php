@@ -4,14 +4,14 @@
 namespace Ling\Light_EndRoutine_CsrfPageCleaner\Handler;
 
 
-use Ling\CSRFTools\CSRFProtector;
-use Ling\Light_EndRoutine\Handler\LightEndRoutineHandlerInterface;
+use Ling\Light_Csrf\Service\LightCsrfService;
+use Ling\Light_EndRoutine\Handler\ContainerAwareLightEndRoutineHandler;
 
 /**
  * The LightEndRoutineCsrfPageCleanerHandler class.
  * We just implement the @page(csrf tool page cleaning system).
  */
-class LightEndRoutineCsrfPageCleanerHandler implements LightEndRoutineHandlerInterface
+class LightEndRoutineCsrfPageCleanerHandler extends ContainerAwareLightEndRoutineHandler
 {
 
 
@@ -20,7 +20,11 @@ class LightEndRoutineCsrfPageCleanerHandler implements LightEndRoutineHandlerInt
      */
     public function handle()
     {
-        CSRFProtector::inst()->deletePageUnusedTokens();
+        /**
+         * @var $csrf LightCsrfService
+         */
+        $csrf = $this->container->get("csrf");
+        $csrf->deletePageUnusedTokens();
     }
 
 }

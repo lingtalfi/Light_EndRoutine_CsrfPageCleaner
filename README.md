@@ -81,6 +81,10 @@ $end_routine.methods_collection:
 History Log
 =============
 
+- 1.1.0 -- 2019-09-20
+
+    - update LightEndRoutineCsrfPageCleanerHandler now depends on csrf service
+    
 - 1.0.0 -- 2019-09-19
 
     - initial commit

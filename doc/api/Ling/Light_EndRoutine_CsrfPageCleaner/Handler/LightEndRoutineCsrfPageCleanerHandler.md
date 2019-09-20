@@ -4,7 +4,7 @@
 
 The LightEndRoutineCsrfPageCleanerHandler class
 ================
-2019-09-19 --> 2019-09-19
+2019-09-19 --> 2019-09-20
 
 
 
@@ -23,10 +23,17 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">LightEndRoutineCsrfPageCleanerHandler</span> implements [LightEndRoutineHandlerInterface](https://github.com/lingtalfi/Light_EndRoutine/blob/master/doc/api/Ling/Light_EndRoutine/Handler/LightEndRoutineHandlerInterface.md) {
+class <span class="pl-k">LightEndRoutineCsrfPageCleanerHandler</span> extends [ContainerAwareLightEndRoutineHandler](https://github.com/lingtalfi/Light_EndRoutine/blob/master/doc/api/Ling/Light_EndRoutine/Handler/ContainerAwareLightEndRoutineHandler.md) implements [LightServiceContainerAwareInterface](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/ServiceContainer/LightServiceContainerAwareInterface.md), [LightEndRoutineHandlerInterface](https://github.com/lingtalfi/Light_EndRoutine/blob/master/doc/api/Ling/Light_EndRoutine/Handler/LightEndRoutineHandlerInterface.md) {
+
+- Inherited properties
+    - protected [Ling\Light\ServiceContainer\LightServiceContainerInterface](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/ServiceContainer/LightServiceContainerInterface.md) [ContainerAwareLightEndRoutineHandler::$container](#property-container) ;
 
 - Methods
     - public [handle](https://github.com/lingtalfi/Light_EndRoutine_CsrfPageCleaner/blob/master/doc/api/Ling/Light_EndRoutine_CsrfPageCleaner/Handler/LightEndRoutineCsrfPageCleanerHandler/handle.md)() : void
+
+- Inherited methods
+    - public ContainerAwareLightEndRoutineHandler::__construct() : void
+    - public ContainerAwareLightEndRoutineHandler::setContainer([Ling\Light\ServiceContainer\LightServiceContainerInterface](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/ServiceContainer/LightServiceContainerInterface.md) $container) : void
 
 }
 
@@ -39,6 +46,8 @@ Methods
 ==============
 
 - [LightEndRoutineCsrfPageCleanerHandler::handle](https://github.com/lingtalfi/Light_EndRoutine_CsrfPageCleaner/blob/master/doc/api/Ling/Light_EndRoutine_CsrfPageCleaner/Handler/LightEndRoutineCsrfPageCleanerHandler/handle.md) &ndash; Executes the end routine.
+- ContainerAwareLightEndRoutineHandler::__construct &ndash; Builds the ContainerAwareLightEndRoutineHandler instance.
+- ContainerAwareLightEndRoutineHandler::setContainer &ndash; Sets the light service container interface.
 
 
 

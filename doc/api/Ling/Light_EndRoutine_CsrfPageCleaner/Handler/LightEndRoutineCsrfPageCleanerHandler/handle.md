@@ -46,7 +46,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [LightEndRoutineCsrfPageCleanerHandler::handle](https://github.com/lingtalfi/Light_EndRoutine_CsrfPageCleaner/blob/master/Handler/LightEndRoutineCsrfPageCleanerHandler.php#L21-L24)
+See the source code for method [LightEndRoutineCsrfPageCleanerHandler::handle](https://github.com/lingtalfi/Light_EndRoutine_CsrfPageCleaner/blob/master/Handler/LightEndRoutineCsrfPageCleanerHandler.php#L21-L28)
 
 
 See Also
