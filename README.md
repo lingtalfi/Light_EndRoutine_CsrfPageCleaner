@@ -4,7 +4,7 @@ Light_EndRoutine_CsrfPageCleaner
 
 
 
-A end routine for cleaning the csrf page tokens.
+An end routine for cleaning the csrf page tokens.
 
  
 
@@ -32,6 +32,7 @@ Summary
 - [Light_EndRoutine_CsrfPageCleaner api](https://github.com/lingtalfi/Light_EndRoutine_CsrfPageCleaner/blob/master/doc/api/Ling/Light_EndRoutine_CsrfPageCleaner.md) (generated with [DocTools](https://github.com/lingtalfi/DocTools))
 - [What is it?](#what-is-it)
 - [Services](#services)
+- [Related](#related)
 
 
 
@@ -77,10 +78,19 @@ $end_routine.methods_collection:
 
 
 
+Related
+==========
+
+- [Light_EndRoutine](https://github.com/lingtalfi/Light_EndRoutine)
+
 
 History Log
 =============
 
+- 1.1.1 -- 2019-09-20
+
+    - update documentation
+    
 - 1.1.0 -- 2019-09-20
 
     - update LightEndRoutineCsrfPageCleanerHandler now depends on csrf service
