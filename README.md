@@ -87,6 +87,10 @@ Related
 History Log
 =============
 
+- 1.2.0 -- 2019-09-24
+
+    - update end routine, now is triggered only on ajax pages
+    
 - 1.1.1 -- 2019-09-20
 
     - update documentation
