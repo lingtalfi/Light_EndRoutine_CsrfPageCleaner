@@ -21,7 +21,7 @@ class LightEndRoutineCsrfPageCleanerHandler extends ContainerAwareLightEndRoutin
      */
     public function handle()
     {
-        if (false === LightTool::isAjax()) {
+        if (false === LightTool::isAjax($this->container)) {
             /**
              * @var $csrf LightCsrfService
              */
