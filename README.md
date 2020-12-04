@@ -90,6 +90,10 @@ Related
 History Log
 =============
 
+- 1.4.1 -- 2020-12-04
+
+    - Add lpi-deps.byml file
+
 - 1.4.0 -- 2019-19-19
 
     - update LightEndRoutineCsrfPageCleanerHandler to accommodate Light.end_routine event instead of the end_routine service
