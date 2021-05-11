@@ -1,0 +1,18 @@
+# --------------------------------------
+# hooks
+# --------------------------------------
+$events.methods_collection:
+    -
+        method: registerListener
+        args:
+            events: Light.end_routine
+            listener:
+                instance: Ling\Light_EndRoutine_CsrfPageCleaner\Handler\LightEndRoutineCsrfPageCleanerHandler
+                methods:
+                    setOptions:
+                        options:
+                            showSession: true
+                            sessionVars:
+                                - light_csrf_simple
+                            path: ${app_dir}/tmp/session-content.txt
+                callable_method: handle
