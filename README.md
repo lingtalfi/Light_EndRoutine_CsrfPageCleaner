@@ -90,6 +90,10 @@ Related
 History Log
 =============
 
+- 1.4.7 -- 2021-05-31
+
+    - Removing trailing plus in lpi-deps file (to work with Light_PlanetInstaller:2.0.0 api
+
 - 1.4.6 -- 2021-05-11
 
     - fix call to undefined setOptions method
